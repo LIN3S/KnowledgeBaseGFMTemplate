@@ -1,0 +1,75 @@
+/*
+ * This file is part of the Knowledge Base project.
+ *
+ * Copyright (c) 2015 LIN3S <info@lin3s.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author Gorka Laucirica <gorka@lin3s.com>
+ */
+
+body {
+    display: flex;
+    overflow: auto !important;
+    font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+}
+
+nav {
+    width: 350px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.kb-logo {
+    text-align: center;
+}
+
+.kb-logo img {
+    max-width: 200px;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+}
+
+nav > ul {
+    padding: 0;
+}
+
+nav > ul ul {
+    padding-left: 20px;
+}
+
+nav li {
+    padding: .5em 0;
+}
+
+nav li span {
+    vertical-align: middle;
+}
+
+nav a {
+    color: #4078c0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-icon {
+    margin-right: .5em;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.content {
+    flex: 1;
+}
+
+.markdown-body {
+    max-width: 800px;
+    margin: auto;
+}

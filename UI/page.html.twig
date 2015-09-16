@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet"
+          href="{{ configuration.assetsBaseUrl }}/{{ configuration.template.name }}/css/template.css">
+    <link rel="stylesheet"
+          href="{{ configuration.assetsBaseUrl }}/{{ configuration.template.name }}/css/github-markdown.css">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="markdown-body">
+            {{ html | raw }}
+        </div>
+    </div>
+{% endblock %}

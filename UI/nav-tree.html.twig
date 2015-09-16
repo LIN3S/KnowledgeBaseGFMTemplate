@@ -1,0 +1,9 @@
+{% for name, content in directory %}
+    {% if name != 'root' %}<li>{{ name | capitalize }}</li>{% endif %}
+    <ul>
+        {% include 'nav-tree.html.twig' with {'directory': content.folders} %}
+        {% for file in content.files %}
+            <li><a href="{{ file.uri }}">{{ file.label }}</a></li>
+        {% endfor %}
+    </ul>
+{% endfor %}
